@@ -9,7 +9,7 @@ font = font.Font(None,50)
 pygame.display.set_caption("Mario Game")
 clock = time.Clock()
 click_sound = pygame.mixer.Sound("s.ogg")
-st = 0
+st = 1
 sound = Surface([190,50])
 sound.fill(blue)
 level = Surface([190,50])
@@ -235,7 +235,6 @@ def ins(instructions):
             #level setting
             if (mouse_x > 350 and mouse_x < 350+190 and mouse_y > 200 and mouse_y < (200+50) and event.type == MOUSEBUTTONDOWN):
                 level2 = True
-                print(level2)
             
             #position of back to main menu
             if (mouse_x > 350 and mouse_x < 350+190 and mouse_y > 300 and mouse_y < (300+50) and event.type == MOUSEBUTTONDOWN):
